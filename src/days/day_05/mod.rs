@@ -81,8 +81,9 @@ fn parse_input(input_file: &File) -> (Crates<STACKS>, Vec<Instruction>) {
 
 #[cfg(test)]
 mod tests {
-    use super::{exercise_1, exercise_2, parse_input, Instruction};
     use std::fs::File;
+
+    use super::{exercise_1, exercise_2, parse_input, Instruction};
 
     #[test]
     fn parsing_works() {
