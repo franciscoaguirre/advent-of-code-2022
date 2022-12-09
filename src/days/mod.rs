@@ -5,6 +5,7 @@ mod day_04;
 mod day_05;
 mod day_06;
 mod day_07;
+mod day_08;
 
 use std::fs::File;
 
@@ -20,7 +21,8 @@ pub fn solve_day(day: u32) {
         5 => day_05::solve(input_file),
         6 => day_06::solve(input_file),
         7 => day_07::solve(input_file),
-        26..=u32::MAX => panic!("Advent of Code does not have that many days!"),
+        8 => day_08::solve(input_file),
+        26.. => panic!("Advent of Code does not have that many days!"),
         _ => panic!("No solution found for that day yet!"),
     }
 }
