@@ -140,10 +140,6 @@ impl Pathfinding {
         Vec::new()
     }
 
-    pub fn find_shortest_path(&self, end_cell: Cell) -> Vec<Cell> {
-        self.select_path(end_cell)
-    }
-
     fn select_path(&self, end: Cell) -> Vec<Cell> {
         let mut current_cell = end;
         let mut selected_cells = Vec::new();
